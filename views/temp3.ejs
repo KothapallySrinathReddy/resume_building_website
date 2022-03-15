@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<style>
+    .box{
+        border-radius: 30px;
+        margin-left: 10%;
+        color: white;
+        /* border: 10px solid #A2A99D; */
+        margin-right: 10%;
+        background-image: linear-gradient(to right,#A2A99D,#000000);
+    }
+    .sameline{
+        display: inline;
+
+    }
+    .name{
+    text-align: center;
+    font-size: xx-large;
+ }
+ .contact{
+     font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+          text-align: right;
+          margin-right: 10%;
+ }
+ .line{
+     height: 1px;
+     background: black;
+ }
+ .objective{
+     font-family: 'Montserrat';
+     text-align: left;
+     margin-left: 5%;
+     font-size: xx-large;
+ }
+ .obj{
+    font-family: 'Lato', sans-serif;
+    font-size: large;
+          text-align: right;
+          margin-right: 10%;
+ }
+ .x{
+     display:flex;
+     flex-direction: row;
+     justify-content: space-around;
+     padding-top: 10px;
+     margin-bottom: 10px;
+ }
+ .pinf{
+     text-align: right;
+ }
+.myimg{
+    border-radius:50%;
+     width:200px;
+}
+ </style>
+ <script>
+     function pdf(){
+         window.print();
+     }
+ </script>
+ <body  >
+     <div class = "box">
+  
+               <div class = "sameline">
+                   <div class="x">
+                <div class="image">
+                <img onclick="pdf()" id ="id"
+                class="img-fluid myimg"
+                src=<%=data.image_url%> 
+                alt="prof"
+                id="image"
+               />
+            </div>
+            <div class="pinf">
+                <div class = "name"><p id="name2r"><ul><%= data.Fullname%></ul></p></div>
+                <div class = "contact obj">
+                    <h5><p id="location"><%=data.Profession%></p>
+                 <p id="pincode"><%=data.Zipcode%></p>
+                 <p id="phoner"><%=data.Phoneno%></p>
+                 <p id="emailr"><%=data.Email%></p>
+                </h5></div>
+            </div>
+        </div>
+                
+            </div>
+               
+              
+              <div class="line"></div>
+              <div class="sameline">
+                <h3 class = "objective"><u>Objective</u></h3>
+            </div>
+            <div class="obj" id="objr">
+                <h5><%=data.Objective%></h5>
+            </div>
+               
+              <br>
+              <div class="line"></div>
+              <div class="sameline">
+                <h3 class="objective"><u>Experience</u></h3>
+                <div class="obj" id="objr">
+                    <h5><%=data.Experience%></h5>
+             </div>
+              <br>
+              <div class="line"></div>
+              <div class="sameline">
+                <h3 class = "objective"><u>Skills</u></h3>
+            </div>
+            <div class="obj" id="objr">
+                   <h5> <%=data.Skills%></h5>
+<br>
+
+        </div>
+        <div class="line"></div>
+        <div class="sameline">
+            <h3 class = "objective"><u>Education</u></h3>
+        </div>
+        <div class="obj" id="objr">
+                <h5><p id="schr"><%=data.SchoolName%></p>
+                <p id="locr"><%=data.Schoollocation%></p>
+                <p id="collr"><%=data.Degree%></p>
+                <p id="fosr"><%=data.fos%></p></h5>
+            </div>
+            <div class="row bgcolor">
+        <div class="row">
+            <div class="col-md-4 background">
+               
+            </div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="temp1input.css">
+</head>
+<body>
+    <div class="data">
+    <div class="personal">
+        <h2>Personal information</h2>
+    <input type="text" placeholder="name">
+    <input type="text" placeholder="address">
+    <input type="text" placeholder="email">
+    <input type="text" placeholder="phone">
+    <input type="text">
+</div>
+     <div class="pro">
+        <h2>Professional information</h2>
+        <input type="text" placeholder="employment">
+        <button class="addemp">Add</button>
+        <input type="text" placeholder="skills">
+        <button class="addskills">Add</button>
+        <input type="text" placeholder="personal interests ">
+        <button class="addpi">Add</button>
+        <input type="text" placeholder="references">
+        <button class="addref">Add</button>
+    
+
+     </div>
+
+    
+
+</div>
+<div class="btn"><a href="temp1.html"><button class="gcv">generate CV</button></a></div>
+<script>
+    const addemp=document.querySelector(".addemp")
+    const addpi=document.querySelector(".addpi")
+    const addskills=document.querySelector(".addskills")
+    const addref=document.querySelector(".addref")
+    const pro=document.querySelector(".pro")
+    addemp.addEventListener("click",function(){
+          let inp=document.createElement("input")
+          pro.insertBefore(inp,addemp)
+    })
+    addpi.addEventListener("click",function(){
+          let inp=document.createElement("input")
+          pro.insertBefore(inp,addpi)
+    })
+    addskills.addEventListener("click",function(){
+          let inp=document.createElement("input")
+          pro.insertBefore(inp,addskills)
+    })
+    addref.addEventListener("click",function(){
+          let inp=document.createElement("input")
+          pro.insertBefore(inp,addref)
+    })
+</script>
+</body>
+</html>

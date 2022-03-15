@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<style>
+/*#resume{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}*/
+ .myimg{
+     border-radius:50%;
+     width:200px;
+     
+ }
+ .background{
+     background-color:#2B73F4;
+     border-radius: 0px;
+     border-top-left-radius: 10px;
+     border-bottom-left-radius: 10px;
+     color: white;
+ }
+ .box{
+     margin-left: 10%;
+     margin-top: 100px;
+    margin-bottom: 100px;
+ }
+ .bott{
+     padding-top: 50px;
+     padding-bottom:50px;
+     text-align: center;
+ }
+ .mar{
+     margin-left:15px;
+ }
+ .bgcolor{
+    background-color:#2B73F4;
+     border-radius: 10px;
+     color: white;
+    height: 40px;
+    display: flex;
+    align-items: center;
+
+
+ }
+ .hhh{
+     font-size: medium;
+     padding-left: 10px;
+     margin-bottom: 0px;
+ }
+ .out_box{
+     border-color:#2B73F4 ;
+     border-width: 3px;
+     border-style: solid;
+     padding: 50px;
+     margin-left: 0px;
+     border-top-right-radius:10px ;
+     border-bottom-right-radius: 10px;
+ }
+ .btn{
+     display: flex;
+     justify-content: center;
+ }
+ p{
+     font-family: 'Lato', sans-serif;
+     font-size: large;
+     margin-top: 10px;
+ }
+ .hhh{
+     font-family: 'Montserrat';
+     font-size: larger;
+ }
+ h1{
+     font-family: 'Montserrat';
+ }
+</style>
+<script>
+    function download(){
+        window.print();
+    }
+</script>
+<script>
+    function hideMe(){
+        $("#myButton").hide();
+    }
+</script>
+<body>
+    <div class="box" id="resume">
+       <div class="row ">
+           <div class="col-md-4 background bott ">
+               <img onclick="download()"
+                class="img-fluid myimg"
+                src=<%=details.image_url %> 
+                alt="prof"
+               />
+               <p id="name2r"><%=details.Fullname%></p>
+               <p id="prof"><%=details.Profession%></p>
+               <p id="location"><%=details.City%></p>
+               <p id="pincode"><%=details.Zipcode%></p>
+               <p id="phoner"><%=details.Phoneno%></p>
+               <p id="emailr"><%=details.Email%></p>
+           </div>
+           <div class="col-md-6 mar out_box">
+               <div class="row">
+                 <h1 class="text-center" style="font-weight: 300" id="name1r"><%=details.Fullname%></h1>
+               </div>
+               <div class="row bgcolor">
+                <h2 class="hhh">Objective</h2>
+            </div>
+            <div class="row" id="objr">
+               <p><%=details.Objective%></p>
+            </div >
+               <div class="row bgcolor">
+                <h2 class="hhh">Education Details</h2>
+                </div>
+                <div class="row">
+                    <p id="schr"><%=details.SchoolName%></p>
+                </div>
+                <div class="row">
+                    <p id="locr"><%=details.Schoollocation%></p>
+                </div>
+                <div class="row">
+                    <p id="collr">Btech</p>
+                </div>
+                <div class="row"> 
+                    <p id="fosr"><%=details.Experience%></p>
+                </div>
+                <div class="row bgcolor">
+                    <h2 class="hhh">Skills</h2b>
+                </div>
+                <div class="row" id="skillr">
+                   <p> <%=details.Skills%></p>
+                </div>
+                  
+           </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-4 background">
+               
+            </div>
+        </div>  
+        
+    </div>
+    <!-- <div class="btn" id="download">
+     <button id="#myButton" onclick="download() /hideMe()">Download</button> 
+    </div> -->
+    
+
+</body>
+</html>

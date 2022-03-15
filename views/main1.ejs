@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        padding: 0%;
+        margin: 0%;
+    }
+    .main{
+    background-image: url('https://i0.wp.com/smashresume.com/wp-content/uploads/edd/2018/08/Green-Background-Resume-Template.jpg?fit=1000%2C750&ssl=1');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+    
+    .main{
+        height: 500px;
+        width: auto;
+        text-align: center;
+    }
+    .bg{
+        background-color: rgba(0,0,0,0.7);
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+  .hg{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      
+    }
+    
+    
+    .header{
+        width: 100%;
+        height: 70px;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    h1{
+        color: white;
+        
+    }
+  
+    button{
+        background-color: orange;
+        color: white;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 5px;
+        box-shadow: none;
+        border: none;
+        margin-top: 100px;
+    }
+    button:hover{
+        transition-duration: 1s;
+        background-color: red;
+    }
+    p{
+        margin-top: 300px;
+        margin-bottom: 0px;
+        color: white;
+    }
+    .button1{
+        text-decoration: 0px;
+        color:white;
+        box-shadow:none;
+        border:none;
+        background-color: orange;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 5px;
+    }
+   
+    
+</style>
+
+<body>
+    <div class="header"><h1>Creating Resume</h1></div>
+    <div class="main">
+        <div class="bg">
+           <p>This is a resume making website</p>
+           <div class="button1">
+            <a href="/logout">logout</a>
+        </div>
+        <div class="hg">
+            <form action="/temp1/<%= uid%>" method="get">
+           <button type="submit">temp1</button>
+           </form>
+             <form action="/temp2/<%= uid%>" method="get">
+            <button type="submit">temp2</button>
+        </form>
+            
+        </div>
+    </div>
+</body>
+</html>

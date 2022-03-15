@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heading</title>
+</head>
+<style>
+     .main{
+       width:400px;
+        margin:50px auto 0px auto;
+    }
+    .heading{
+        background-color:rgba(0,0,0,0.5);
+        width:100%;
+        font-size:18px;
+        border-radius:10px;
+        border: soid rgba(255,255,255,0.3);
+        box-shadow:1px soid rgba(255,255,255,0.3);
+        color:#fff;
+    }
+    #heading{
+        margin:40px;
+    }
+    h2{
+        text-align:center;
+        font-family:'Times New Roman', Times, serif;
+    }
+    label{
+        font-family:'Times New Roman', Times, serif;
+        font-size:20px;
+        font-style:italic;
+    }
+    #name,#fname,#prof,#city,#zip,#phone,#email{
+        width:300px;
+        border: 1px solid #ddd;
+        border-radius:3px;
+        outline:0;
+        padding:7px;
+        background-color:#fff;
+        box-shadow:inset 1px 1px 5px rgba(0,0,0,0.3);
+    }
+    #submit{
+        text-align:center;
+        width:100px;
+        padding:7px;
+        font-size:16px;
+        font-family:'Times New Roman', Times, serif;
+        font-weight:600;
+        border:none;
+        border-radius:3px;
+        background-color: rgba(250,100,0,0.8);
+        color:#fff;
+        cursor:pointer;
+        border:1px 1px 5px rgba(0,0,0,0.3);
+    }
+    .button{
+        background-color: orange;
+        color: white;
+        text-decoration: none;
+        padding-top: 5px;
+        padding-bottom: 0px;
+        padding-left: 25px;
+        padding-right: 25px;
+        border-radius: 5px;
+    }
+</style>
+<body>
+    <div class="main">
+        <div class="heading">
+            <form id="heading" method="get" action="education.html">
+                    <h2>Heading</h2>
+                <label>Full Name:</label>   
+                <br>                                                                                                                                           
+                <input type="text" name="fname" id="fname"  placeholder="First Name">
+                <br><br>
+                <label>Profession:</label>
+                <br>
+                <input type="text" name="prof" id="prof"  placeholder="Profession">
+                <br><br>
+                <label>City:</label>
+                <br>
+                <input type="text" name="city" id="city"  placeholder="City">
+                <br><br>
+                <label>Zip Code:</label>
+                <br>
+                <input type="text" name="Zip" id="zip"  placeholder="Zip Code">
+                <br><br>
+                <label>Phoneno:</label>
+                <br>
+                <input type="text" name="Phoneno" id="phone"  placeholder="Phone">
+                <br><br>
+                <label>Email Address:</label>
+                <br>
+                <input type="text" name="Email" id="email"  placeholder="Email Address">
+                <br><br>
+            <!--    <a href='education.html' class="button nexthead">
+                    Next</a>  -->
+                <input type="submit" onclick="storedata()">
+                </form>
+        </div>
+
+    </div>
+    <script src="generate.js"></script>
+</body>
+</html>

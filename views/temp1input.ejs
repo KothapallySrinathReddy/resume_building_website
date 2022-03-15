@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="temp1input.css">
+</head>
+<style>
+      input{
+    padding: 8px;
+    border-radius: 5px;
+    border-color: gray;
+    box-shadow: none;
+    border-width: 2px;
+   
+}
+.btn{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.gcv{
+    width:100px
+}
+button{
+    background-color: aquamarine;
+    color: white;
+    width: 50px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.personal{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+    width: 400px;
+    height: 400px;
+
+}
+
+.pro{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+    width: 400px;
+    height: 400px;
+}
+.data{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100vh;
+}
+</style>
+<body>
+    <form action="/storing/<%= uid%>" method="post">
+    <div class="data">
+    <div class="personal">
+        <h2>Personal information</h2>
+    <input type="text" placeholder="name" id="name" name="fullname">
+    <input type="text" placeholder="address" id="address" name="address">
+    <input type="text" placeholder="email" id="email" name="email">
+    <input type="text" placeholder="phone" id="phone" name="phoneno">
+    <input type="text" placeholder="zipcode" id="zipcode" name="zipcode">
+    <input type="text" placeholder="city" id="city" name="city">
+    
+    <input type="text" placeholder="fos" id="fos" name="fos">
+    <input type="text" placeholder="image link" id="image_url" name="image_url">
+</div>
+     <div class="pro">
+        <h2>Professional information</h2>
+        <input type="text" placeholder="objective" id="objective" name="objective">
+        <input type="text" placeholder="skills" id="skills" name="skills">
+        <input type="text" placeholder="experience" id="experience" name="experience">
+        <input type="text" placeholder="schoolname" id="schoolname" name="schoolname">
+        <input type="text" placeholder="schoollocation" id="schoollocation" name="schoollocation">
+        <input type="text" placeholder="degree" id="degree" name="degree">
+        <input type="text" placeholder="profession" id="profession" name="profession">
+     </div>
+
+    
+
+</div>
+<div class="btn"><a href="temp1.html"><button class="gcv">generate CV</button></a></div>
+<script>
+    const addemp=document.querySelector(".addemp")
+    const addpi=document.querySelector(".addpi")
+    const addskills=document.querySelector(".addskills")
+    const addref=document.querySelector(".addref")
+    const pro=document.querySelector(".pro")
+    addemp.addEventListener("click",function(){
+          let inp=document.createElement("input")
+          pro.insertBefore(inp,addemp)
+    })
+    addpi.addEventListener("click",function(){
+          let inp=document.createElement("input")
+          pro.insertBefore(inp,addpi)
+    })
+    addskills.addEventListener("click",function(){
+          let inp=document.createElement("input")
+          pro.insertBefore(inp,addskills)
+    })
+    addref.addEventListener("click",function(){
+          let inp=document.createElement("input")
+          pro.insertBefore(inp,addref)
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+</head>
+<style>
+     .main{
+        
+       width:400px;
+        margin:50px auto 0px auto;
+    }
+    .heading{
+        background-color:rgba(0,0,0,0.5);
+        width:100%;
+        font-size:18px;
+        border-radius:10px;
+        border: soid rgba(255,255,255,0.3);
+        box-shadow:1px soid rgba(255,255,255,0.3);
+        color:#fff;
+        height:400px;
+    }
+    #heading{
+        margin:40px;
+    }
+    h2{
+        text-align:center;
+        font-family:'Times New Roman', Times, serif;
+    }
+    label{
+        font-family:'Times New Roman', Times, serif;
+        font-size:20px;
+        font-style:italic;
+    }
+    #name,#school,#sloc,#degree,#fos{
+        width:300px;
+        border: 1px solid #ddd;
+        border-radius:3px;
+        outline:0;
+        padding:7px;
+        background-color:#fff;
+        box-shadow:inset 1px 1px 5px rgba(0,0,0,0.3);
+    }
+   #button{
+       background-color: orange;
+       color:white;
+       text-decoration: none;
+       padding-top: 5px;
+       padding-left: 25px;
+       padding-right: 25px;
+       padding-bottom: 5px;
+       border-radius: 5px;
+   }
+</style>
+<body>
+    <div class="main">
+        <div class="heading">
+            <form id="heading" method="get" action="skill.html">
+                    <h2>Education</h2>
+                <label>School Name:</label>   
+                <br>                                                                                                                                           
+                <input type="text" name="school" id="school"  placeholder="School Name">
+                <br><br>
+                <label>School Location:</label>   
+                <br>                                                                                                                                           
+                <input type="text" name="sloc" id="sloc"  placeholder="School Location">
+                <br><br>
+                <label>Degree:</label>
+                <br>
+                <input type="text" name="degree" id="degree"  placeholder="Degree">
+                <br><br>
+                <label>Field Of Study:</label>
+                <br>
+                <input type="text" name="fos" id="fos"  placeholder="Field Of Study">
+                <br><br>
+            <!--   <a href="skill.html" id="button">
+                    Next 
+                </a>  -->
+                <input type="submit" onclick="storeEDdata()">
+            </form>
+        </div>
+
+    </div>
+    <script src="generate.js"></script>
+</body>
+</html>
+
+
+
